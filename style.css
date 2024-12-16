@@ -1,0 +1,7 @@
+:root {
+  --beige: rgb(238, 232, 220);
+}
+
+body {
+  background-color: var(--beige);
+}
