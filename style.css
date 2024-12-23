@@ -1,7 +1,121 @@
 :root {
   --beige: rgb(238, 232, 220);
+  --blue: rgb(77, 107, 171);
+  --darkgreen: rgb(57, 63, 25);
+}
+@font-face {
+  font-family: 'MyFont'; /* The name you'll use in your CSS */
+  src: url('/EQUALI.otf') format('opentype'), /* Modern browsers */
+       url('/EQUALI.otf') format('opentype');   /* Older browsers */
 }
 
 body {
-  background-color: var(--beige);
+  background-color: var(--beige);  
+  font-family: 'MyFont', sans-serif; /* Apply the custom font */
+  overflow-x: hidden;
+  width: 90%;
+}
+
+.logga-div {
+  text-align: center;
+}
+.logga {
+  width: 100%; /* Adjust the size of the image */
+  max-width: 100%; /* Set a maximum width to prevent it from being too large */
+  height: auto; /* Maintain the aspect ratio */
+  display: inline-block; /* Ensures the image aligns properly in the center */
+}
+
+.title-div {
+  padding: 10px;
+}
+
+.title-text {
+  font-size: 1.7em;
+  text-align: center;
+  color: var(--blue);
+}
+
+.cong-div {
+  text-align: center; /* Centers the image horizontally */
+}
+
+.restaurant-title-text {
+  font-size: 1.8em;
+  color: var(--darkgreen);
+}
+
+.cong {
+  width: 70%; /* Adjust the size of the image */
+  max-width: 300px; /* Set a maximum width to prevent it from being too large */
+  height: auto; /* Maintain the aspect ratio */
+  display: inline-block; /* Ensures the image aligns properly in the center */
+}
+button-div {
+  text-align: center;
+}
+.cong-button {
+  display: block; /* Makes the button take up the full width of its container */
+  margin: 20px auto; /* Auto margins horizontally center it */
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.krubb-div {
+  text-align: center; /* Centers the image horizontally */
+  padding-top: 20px;
+}
+
+
+.annan-text {
+  text-align: center;
+  font-size: 25px;
+}
+.image-container {
+  text-align: center;
+  max-width: 100%; /* Optional: Limit the image section width */
+}
+
+.image {
+  width: 80%; /* Adjust the size of the image */
+  height: auto; /* Maintain the aspect ratio */
+  display: inline-block; /* Ensures the image aligns properly in the center */
+}
+.food-container {
+  display: flex; /* Arrange items side by side */
+  justify-content: center; /* Center items horizontally */
+  gap: 10px; /* Add space between items */
+  margin: 20px;
+}
+
+.item {
+  text-align: center; /* Center the text and image in each column */
+}
+
+.item p {
+  margin: 0 0 10px; /* Add spacing below the text */
+  font-size: 1.2em; /* Optional: Adjust text size */
+  color: #333; /* Optional: Text color */
+}
+
+
+
+.item img {
+  width: 150px; /* Optional: Adjust image size */
+  height: auto;
+}
+
+
+
+
+
+.footer {
+  width: 100%; /* Ensure the footer spans the entire width */
+  text-align: center; /* Center the image horizontally */
+  padding: 10px 0; /* Add some vertical spacing */
+}
+
+.footer-image {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
 }
