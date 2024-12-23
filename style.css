@@ -101,11 +101,11 @@ button-div {
   margin: 20px;
 }
 
-.item {
+.food-item {
   text-align: center; /* Center the text and image in each column */
 }
 
-.item p {
+.food-item p {
   margin: 0 0 10px; /* Add spacing below the text */
   font-size: 1.2em; /* Optional: Adjust text size */
   color: #333; /* Optional: Text color */
@@ -113,18 +113,18 @@ button-div {
 
 
 
-.item img {
+.food-item img {
   width: 150px; /* Optional: Adjust image size */
   height: auto;
   cursor: pointer; /* Indicate it's clickable */
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
-.item::after {
+.food-item::after {
   content: "";
   width: 350px;
 }
-.item img:hover {
+.food-item img:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -172,6 +172,48 @@ button-div {
     width: 100%; /* Make images responsive */
     max-width: 500px; /* Optional: Limit the maximum size of images */
     height: auto; /* Maintain the aspect ratio */
+  }
+
+  /* Parent Container: Flexbox Layout */
+  .layout-container {
+    display: flex; /* Enables side-by-side layout */
+    gap: 20px; /* Space between the menu and recommendations */
+    margin: 20px; /* Outer margin */
+    align-items: flex-start; /* Align menu and recommendations at the top */
+  }
+
+  /* Menu Section */
+  .menu-container {
+    width: 50%; /* Allocate 40% of the width to the menu */
+    text-align: center; /* Center the image within this section */
+  }
+
+  .menu-image {
+    width: 100%; /* Make the menu image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 300px; /* Optional: Limit the maximum width of the menu */
+  }
+
+  /* Recommendations Section */
+  .recommendations-container {
+    width: 60%; /* Allocate 60% of the width to the recommendations */
+  }
+
+  .annan-text {
+    font-size: 1.5rem; /* Styling for the title */
+    margin-bottom: 10px;
+  }
+
+  .food-item {
+    margin-bottom: 20px; /* Side-by-side layout for food items */
+    text-align: center;
+  }
+
+  .food-item img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Limit the maximum width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 5px;
   }
 
   .footer {
